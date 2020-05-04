@@ -153,4 +153,27 @@ footer {
             background: $blue;
         }
     }
+
+    &--back {
+        background: $dark;
+        color: white;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0 15px 0 31px;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 11px;
+            background: url('../img/top-slider-nav.svg') center no-repeat;
+            left: 15px;
+            top: 13px;
+        }
+
+        &:hover {
+            background: $blue;
+        }
+    }
 }
