@@ -154,6 +154,12 @@ footer {
         }
     }
 
+    &--small {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0 23px;
+    }
+
     &--back {
         background: $dark;
         color: white;
