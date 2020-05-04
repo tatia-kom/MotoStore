@@ -1,0 +1,39 @@
+
+//fonts
+
+$textFont: 'Roboto';
+$serviceFontRegular: 'Century Gothic Regular';
+$serviceFontBold: 'Century Gothic Bold';
+$itemFont: 'Montserrat';
+
+//colors
+
+$blue: #0B6CB2;
+$dark: #393939;
+
+//media
+
+$lg: 1399px;
+$md: 1199px;
+$sm: 991px;
+$xs: 767px;
+
+// mixins
+
+@mixin placeholderColor($color) {
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+  &::placeholder {
+    color: $color;
+  }
+}

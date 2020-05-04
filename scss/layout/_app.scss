@@ -1,0 +1,145 @@
+@import "layout/fonts";
+@import "layout/var";
+
+body {
+    font-family: $textFont, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background: white;
+    position: relative;
+}
+
+p {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+header, footer, section, div, span, p, button, a, input, textarea, form {
+    box-sizing: border-box;
+}
+
+button,input,textarea,select{
+    outline: none;
+}
+button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    transition: 0.3s;
+}
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:focus {
+    outline: none;
+}
+
+form {
+    margin: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-head {
+    height: 75px;
+    position: relative;
+}
+
+.container {
+    width: 1276px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.button {
+    height: 38px;
+    font-family: $serviceFontRegular;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+
+    &--blue {
+        background: $blue;
+        color: white;
+        border: 1px solid transparent;
+        padding: 0 20px;
+
+        &:hover {
+            color: $blue;
+            background: transparent;
+            border-color: $blue;
+        }
+    }
+
+    &--top {
+        background: white;
+        font-size: 20px;
+        line-height: 25px;
+        padding: 0 60px;
+
+        &:hover {
+            background: $blue;
+            color: white;
+        }
+    }
+
+    &--more {
+        font-size: 14px;
+        line-height: 17px;
+        color: white;
+        background: $dark;
+        padding: 0 30px 0 15px;
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 11px;
+            background: url('../img/top-slider-nav.svg') center no-repeat;
+            right: 12px;
+            top: 14px;
+            transform: scale(-1,1);
+        }
+
+        &:hover {
+            background: $blue;
+        }
+    }
+
+    &--subscribe {
+        color: white;
+        background: $dark;
+        padding: 0 40px 2px 15px;
+        font-size: 14px;
+        line-height: 17px;
+
+        &:hover {
+            background: $blue;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 19px;
+            height: 15px;
+            background: url('../img/subscribe-icon.svg');
+            right: 15px;
+            top: 11px;
+        }
+    }
+}

@@ -1,0 +1,165 @@
+@import "layout/var";
+
+.header {
+  width: 100%;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  z-index: 1002;
+  position: relative;
+  background: white;
+  transition: 0.3s;
+
+  &--scrolling {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    & + .header__catalog {
+      position: fixed;
+      top: 75px;
+    }
+  }
+
+  &--hidden {
+    transform: translateY(-100%);
+  }
+
+  &--opened_menu {
+    .header__menu-button {
+      span:not(.header__menu-label) {
+
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          top: 10px;
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          top: 10px;
+        }
+      }
+
+      .header__menu-label {
+        &--menu {
+          display: none;
+        }
+
+        &--close {
+          display: block;
+        }
+      }
+    }
+
+    .header__form {
+      opacity: 1;
+    }
+
+    & + .header__catalog {
+      transform: translateY(0);
+    }
+  }
+
+  &__catalog {
+    transform: translateY(-100%);
+  }
+
+  &__menu-button {
+    cursor: pointer;
+    position: relative;
+    padding-left: 58px;
+
+    span:not(.header__menu-label) {
+      display: block;
+      width: 33px;
+      height: 4px;
+      background: $dark;
+      position: absolute;
+      left: 5px;
+      transition: 0.3s;
+
+      &:nth-child(1) {
+        top: 3px;
+      }
+
+      &:nth-child(2) {
+        top: 11px;
+      }
+
+      &:nth-child(3) {
+        top: 19px;
+      }
+    }
+  }
+
+  &__menu-label {
+    color: $dark;
+    font-family: $textFont;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+    &--close {
+      display: none;
+    }
+  }
+
+  &__form {
+    margin-left: 27px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  &__order {
+    margin-left: auto;
+  }
+
+  &__basket {
+    font-family: $serviceFontRegular;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    position: relative;
+    padding: 4px 20px 6px 36px;
+    color: $dark;
+    border-bottom: 2px dashed $dark;
+    cursor: pointer;
+    margin-left: 43px;
+    transition: 0.3s;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 29px;
+      height: 20px;
+      background: url('../img/order-icon.svg');
+    }
+
+    &:hover {
+      border-color: $blue;
+    }
+
+    span {
+      font-family: $textFont;
+      font-size: 14px;
+      line-height: 16px;
+      color: $blue;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__logo {
+    margin-left: 35px;
+    cursor: pointer;
+  }
+}

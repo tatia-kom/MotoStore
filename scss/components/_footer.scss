@@ -1,0 +1,138 @@
+@import "layout/var";
+
+.footer {
+  background: #F2F2F2;
+  padding: 39px 0;
+
+  &__flex {
+    display: flex;
+  }
+
+  &__left {
+    width: 34%;
+    flex-shrink: 0;
+  }
+
+  &__subscribe-text {
+    color: #393939;
+    font-family: $serviceFontRegular;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+
+  &__soc {
+    margin-top: 16px;
+  }
+
+  &__menu {
+    margin-left: 55px;
+  }
+}
+
+.socials {
+  display: flex;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: $blue;
+    margin-right: 12px;
+    border-radius: 50%;
+
+    &:hover {
+      background: $dark;
+    }
+  }
+}
+
+.column-menu {
+  display: flex;
+
+  &__col {
+    margin-right: 55px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: $dark;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &--external {
+      padding-left: 20px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 13px;
+        height: 13px;
+        background: url('../img/external-icon.svg');
+      }
+    }
+  }
+}
+
+.bottom {
+  padding: 18px 0 20px;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copyright {
+    max-width: 707px;
+    font-size: 8px;
+    line-height: 10px;
+    font-family: $serviceFontRegular;
+  }
+
+  &__slogan {
+    font-family: $serviceFontRegular;
+    color: $dark;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 6px;
+    padding-right: 9px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $dark;
+      transition: 0.3s;
+    }
+
+    &--lined {
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+}

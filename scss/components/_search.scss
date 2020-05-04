@@ -1,0 +1,31 @@
+@import "layout/var";
+
+.search {
+  background: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 420px;
+
+  &__input {
+    border: 0;
+    width: 100%;
+    box-shadow: none;
+    background: transparent;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 9px 0 9px 24px;
+
+    @include placeholderColor(rgba(0,0,0,0.3))
+  }
+
+  &__button {
+    display: block;
+    width: 50px;
+    flex-shrink: 0;
+    margin: 0 10px;
+    height: 35px;
+    background: url('../img/search-icon.svg') center no-repeat;
+    cursor: pointer;
+  }
+}
