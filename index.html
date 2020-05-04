@@ -356,5 +356,21 @@
 
     <!-- / FOOTER -->
 
+
+
+<!-- ЭТО СКРИПТЫ ЧИСТО ДЛЯ ТЕСТА НА ХЕРОКУ -->
+
+<script>
+    document.getElementsByClassName('header__menu-button')[0].onclick = function() {
+        const header = document.getElementsByClassName('header')[0];
+        if (!header.classList.contains('header--opened_menu')) {
+            header.classList.add('header--opened_menu');
+        }
+        else {
+            header.classList.remove('header--opened_menu');
+        }
+    }
+</script>
+
 </body>
 </html>
