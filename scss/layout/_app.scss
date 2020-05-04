@@ -53,6 +53,7 @@ footer {
 .main-head {
     height: 75px;
     position: relative;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
 }
 
 .container {
@@ -140,6 +141,16 @@ footer {
             background: url('../img/subscribe-icon.svg');
             right: 15px;
             top: 11px;
+        }
+    }
+
+    &--grey {
+        background: $dark;
+        color: white;
+        padding: 0 15px;
+
+        &:hover {
+            background: $blue;
         }
     }
 }
