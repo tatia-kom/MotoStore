@@ -1,0 +1,56 @@
+@import "layout/var";
+
+.text {
+  padding: 40px 0 40px;
+  font-family: $itemFont;
+  color: $dark;
+  font-size: 14px;
+  line-height: 17px;
+
+  h1 {
+    font-weight: 800;
+    font-size: 66px;
+    line-height: 73px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 53px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 25px;
+  }
+
+  h5 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  h6 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-family: $itemFont;
+  }
+}
