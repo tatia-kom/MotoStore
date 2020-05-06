@@ -68,6 +68,10 @@ footer {
     &--middle {
         width: 958px;
     }
+
+    &--big {
+        width: 1150px;
+    }
 }
 
 .button {
@@ -162,6 +166,12 @@ footer {
         }
     }
 
+    &--book {
+        font-size: 18px;
+        line-height: 22px;
+        width: 100%;
+    }
+
     &--small {
         font-size: 12px;
         line-height: 15px;
@@ -188,6 +198,46 @@ footer {
 
         &:hover {
             background: $blue;
+        }
+    }
+
+    &--to_basket {
+        border: 2px solid $dark;
+        padding: 0 18px 0 53px;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 29px;
+            height: 20px;
+            background: url('../img/order-icon.svg') center no-repeat;
+            background-size: cover;
+            left: 19px;
+            top: 7px;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 29px;
+            height: 20px;
+            background: url('../img/order-icon-blue.svg') center no-repeat;
+            background-size: cover;
+            left: 19px;
+            top: 7px;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            color: $blue;
+            border-color: $blue;
+
+            &:after {
+                opacity: 1;
+            }
         }
     }
 }

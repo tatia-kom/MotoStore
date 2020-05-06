@@ -1,0 +1,99 @@
+@import "layout/var";
+
+.items {
+  padding: 30px 0 37px;
+
+  &__title {
+    font-family: $itemFont;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      height: 2px;
+      background: $dark;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    span {
+      background: white;
+      padding: 0 40px;
+      position: relative;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -11px;
+    width: calc(100% + 22px);
+    margin-top: 18px;
+  }
+
+  &__block {
+    width: calc(33.33% - 22px);
+    margin: 11px;
+  }
+
+  &__button {
+    margin: 56px 0 0 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.item-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__image-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 57.22%;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: center center no-repeat;
+    background-size: cover;
+  }
+
+  &__name {
+    font-family: $itemFont;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    padding-top: 24px;
+  }
+
+  &__description {
+    font-family: $itemFont;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 18px;
+    margin-bottom: 45px;
+  }
+
+  &__button {
+    margin-top: auto;
+  }
+}

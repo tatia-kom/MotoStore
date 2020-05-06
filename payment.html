@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Оплата | MotoStore</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+  
+</head>
+<body>
+
+
+<section class="main-head">
+    <!-- HEADER -->
+
+    <!-- Добавить класс "header--scrolling", если нужна прибитая к верху шапка.
+         Добавить К НЕМУ класс "header--hidden", если нужно скрыть шапку при скролле вниз -->
+
+    <!-- Добавить класс "header--opened_menu", когда меню открыто -->
+    <header class="header">
+        <button class="header__menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="header__menu-label header__menu-label--menu">Меню</span>
+            <span class="header__menu-label header__menu-label--close">Закрыть</span>
+        </button>
+        <form class="search header__form">
+            <input type="text" class="search__input" placeholder="Введите ваш поисковой запрос">
+            <button class="search__button"></button>
+        </form>
+        <button class="button button--blue header__order">Заказать тест-райд</button>
+        <div class="header__basket">Корзина<span>(0)</span></div>
+        <div class="header__logo">
+            <img src="img/logo.svg" alt="">
+            <span>Официальный дилерский центр</span>
+        </div>
+    </header>
+
+    <!-- / HEADER -->
+
+    <!-- CATALOG -->
+
+    <div class="catalog header__catalog">
+        <!-- Добавить класс "catalog__categories--shown" для анимированного появления списка категорий -->
+        <div class="catalog__categories catalog__categories--shown">
+            <span class="catalog__cat catalog__cat--active">Мотоциклы BMW</span>
+            <span class="catalog__cat">Аксессуары</span>
+            <span class="catalog__cat">Сервис</span>
+            <span class="catalog__cat">Владельцам BMW</span>
+            <span class="catalog__cat">Мир BMW</span>
+            <span class="catalog__cat">Дилерский центр</span>
+        </div>
+
+        <!-- Добавить класс "catalog__categories--shown" для анимированного появления списка категорий -->
+        <div class="catalog__categories catalog__categories--shown">
+            <span class="catalog__cat catalog__cat--small">Adventure</span>
+            <span class="catalog__cat catalog__cat--small catalog__cat--active">Roadster</span>
+            <span class="catalog__cat catalog__cat--small">Sport</span>
+            <span class="catalog__cat catalog__cat--small">Tour</span>
+            <span class="catalog__cat catalog__cat--small">Heritage</span>
+            <span class="catalog__cat catalog__cat--small">Maxi-scooter</span>
+            <span class="catalog__cat catalog__cat--small">Мотоциклы с пробегом</span>
+            <span class="catalog__cat catalog__cat--small">Мотоциклы в налиции</span>
+        </div>
+
+        <!-- Добавить класс "catalog__items--shown" для анимированного появления списка товаров -->
+        <div class="catalog__items catalog__items--shown">
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">G 310 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">BMW F 750 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">G 310 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">BMW F 750 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">G 310 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">BMW F 750 GS</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- / CATALOG -->
+
+</section>
+
+    <!-- BASKET -->
+
+    <section class="basket">
+        <div class="container container--big">
+            <div class="basket-table">
+                <div class="basket-table__row basket-table__row--head basket-table__row--head_big">
+                    <div class="basket-table__cell basket-table__cell--image">В вашем гараже 2 товара</div>
+                    <div class="basket-table__cell basket-table__cell--description">Наименование</div>
+                    <div class="basket-table__cell basket-table__cell--count">Количество</div>
+                    <div class="basket-table__cell basket-table__cell--buy">Цена</div>
+                </div>
+                <div class="basket-table__row">
+                    <div class="basket-table__cell basket-table__cell--image"><img src="img/cat1.jpg" alt=""></div>
+                    <div class="basket-table__cell basket-table__cell--description">
+                        <p class="basket-table__name">Мотоцикл</p>
+                        <p class="basket-table__model">BMW F 750 GS</p>
+                    </div>
+                    <div class="basket-table__cell basket-table__cell--count">
+                        <span class="basket-table__count-num">1</span>
+                    </div>
+                    <div class="basket-table__cell basket-table__cell--buy">
+                        <span class="basket-table__price">665 000 ₽</span>
+                    </div>
+                    <span class="basket-table__delete"></span>
+                </div>
+                <div class="basket-table__row">
+                    <div class="basket-table__cell basket-table__cell--image"><img src="img/basket1.jpg" alt=""></div>
+                    <div class="basket-table__cell basket-table__cell--description">
+                        <p class="basket-table__name">Шлем</p>
+                        <p class="basket-table__model">STREET X</p>
+                    </div>
+                    <div class="basket-table__cell basket-table__cell--count">
+                        <span class="basket-table__count-num">1</span>
+                    </div>
+                    <div class="basket-table__cell basket-table__cell--buy">
+                        <span class="basket-table__price">23 000 ₽</span>
+                    </div>
+                    <span class="basket-table__delete"></span>
+                </div>
+                <div class="basket-table__row basket-table__row--bottom">
+                    <div class="basket-table__cell basket-table__cell--image"></div>
+                    <div class="basket-table__cell basket-table__cell--description"></div>
+                    <div class="basket-table__cell basket-table__cell--count"></div>
+                    <div class="basket-table__cell basket-table__cell--buy">
+                        Итого:<span class="basket-table__price">688 000 ₽</span>
+
+                        <button class="button button--grey button--book basket-table__book-all">Оплатить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- / BASKET -->
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer__flex">
+            <div class="footer__left">
+                <p class="footer__subscribe-text">Подпишитесь на новостную рассылку BMW Motorrad</p>
+                <button class="button button--subscribe">Будьте в курсе</button>
+                <div class="socials footer__soc">
+                    <a href="#" class="socials__item">
+                        <span class="socials__icon"><img src="img/insta.svg" alt=""></span>
+                        <span class="socials__text">@bmw.kazan</span>
+                    </a>
+                </div>
+                <p class="footer__contacts">
+                    Контакты дилерского центра:<br>
+                    г. Казань, ул. Петербуржская, 50<br>
+                    +123 459 7890
+                </p>
+            </div>
+            <div class="column-menu footer__menu">
+                <div class="column-menu__col">
+                    <a href="#" class="column-menu__link column-menu__link--external">BMW Motorrad Motorsport</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">Автомобили BMW</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">Автомобили MINI</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">BMW Group</a>
+                </div>
+                <div class="column-menu__col">
+                    <a href="#" class="column-menu__link column-menu__link--external">Музей BMW</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">Специальная техника</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">Запрос коммерческого предложения</a>
+                    <a href="#" class="column-menu__link">Как стать дилером BMW Motorrad</a>
+                </div>
+                <div class="column-menu__col">
+                    <a href="#" class="column-menu__link">Cookies</a>
+                    <a href="#" class="column-menu__link">Политика конфиденциальности</a>
+                    <a href="#" class="column-menu__link">Перепечатка информации</a>
+                    <a href="#" class="column-menu__link">Правовая информация</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom">
+        <div class="container bottom__flex">
+            <p class="bottom__copyright">© BMW AG 2019<br>Обратите внимание: Все мотоциклы поставляются с оборудованием, соответствующим требованиям законодательства (например, фильтрами выхлопных газов и боковыми отражателями). Фотографии и видеозаписи мотоциклов, представленных на этом сайте, могут незначительно отличаться от моделей для российского рынка.</p>
+
+            <div class="bottom__logo"><img src="img/bottom-logo.png" alt=""></div>
+
+            <!-- Анимация будет при добавлении класса "bottom__slogan--lined" -->
+            <span class="bottom__slogan bottom__slogan--lined">MAKE LIFE A RIDE</span>
+        </div>
+    </div>
+
+    <!-- / FOOTER -->
+
+</body>
+</html>

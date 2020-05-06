@@ -1,0 +1,198 @@
+@import "layout/var";
+
+.basket {
+  padding: 17px 0 37px;
+}
+
+.basket-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+
+  & + .basket-table {
+    margin-top: 20px;
+  }
+
+  &__item {
+    color: $dark;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 13px 0;
+    transition: 0.3s;
+    margin-right: 65px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      font-weight: bold;
+      font-size: 22px;
+      cursor: default;
+      color: $dark!important;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.basket-table {
+  &__row {
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 200px;
+
+    &--head {
+      min-height: 0;
+      padding: 13px 0;
+
+      .basket-table__cell {
+        font-size: 20px!important;
+        line-height: 23px!important;
+
+        &--count {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    &--head_big {
+      .basket-table__cell {
+        font-size: 24px!important;
+        line-height: 28px!important;
+
+        &--image {
+          font-weight: 500;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    &--bottom {
+      border-bottom: 0;
+      min-height: 0;
+
+      .basket-table__cell--buy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__cell {
+    flex-shrink: 0;
+    font-size: 22px;
+    line-height: 26px;
+
+    &--image {
+      width: 21%;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        max-height: 145px;
+      }
+    }
+
+    &--description {
+      width: 150px;
+    }
+
+    &--count {
+      width: 174px;
+    }
+
+    &--text_center {
+      text-align: center;
+    }
+
+    &--buy {
+      width: 247px;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+
+    & + .basket-table__model {
+      margin-top: 9px;
+    }
+  }
+
+  &__model {
+
+  }
+
+  &__count-num {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__price {
+    font-weight: bold;
+  }
+
+  &__book {
+    position: absolute;
+    right: 0;
+    bottom: 32px;
+    width: 247px;
+  }
+
+  &__book-all {
+    margin-top: 17px;
+    background: $blue;
+    border: 1px solid $blue;
+
+    &:hover {
+      background: white;
+      color: $blue;
+    }
+  }
+
+  &__delete {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    background: url('../img/delete-icon.svg');
+    cursor: pointer;
+  }
+}
+
+.basket-count {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  line-height: 30px;
+
+  span {
+    width: 52px;
+    flex-shrink: 0;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+  }
+
+  &__input {
+    width: 70px;
+    border: 2px solid $dark;
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    font-family: $textFont;
+  }
+}
