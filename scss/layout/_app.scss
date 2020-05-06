@@ -3,7 +3,7 @@
 
 body {
     font-family: $textFont, sans-serif;
-    color: black;
+    color: $dark;
     margin: 0;
     padding: 0;
     background: white;
@@ -60,6 +60,10 @@ footer {
     width: 1276px;
     margin: 0 auto;
     max-width: 100%;
+
+    &--form {
+        width: 704px;
+    }
 }
 
 .button {
