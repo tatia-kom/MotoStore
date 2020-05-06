@@ -72,6 +72,10 @@ footer {
     &--big {
         width: 1150px;
     }
+
+    &--max {
+        width: 1353px;
+    }
 }
 
 .button {
@@ -234,6 +238,57 @@ footer {
         &:hover {
             color: $blue;
             border-color: $blue;
+
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &--product {
+        background: transparent;
+        border: 2px solid white;
+        width: 100%;
+        color: white;
+
+        &:hover {
+            background: white;
+            color: $dark;
+        }
+    }
+
+    &--product_order {
+        background: white;
+        width: 100%;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 29px;
+            height: 20px;
+            background: url('../img/order-icon.svg') center no-repeat;
+            background-size: cover;
+            left: 65px;
+            top: 8px;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 29px;
+            height: 20px;
+            background: url('../img/order-icon-blue.svg') center no-repeat;
+            background-size: cover;
+            left: 65px;
+            top: 8px;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            color: $blue;
 
             &:after {
                 opacity: 1;

@@ -2,12 +2,17 @@
 
 .top {
   position: relative;
+  overflow: hidden;
 
   &__nav {
     position: absolute;
     bottom: 69px;
-    left: 92px;
+    left: calc((100% - 1276px)/2);
     z-index: 1000;
+
+    &--max_container {
+      left: calc((100% - 1353px)/2);
+    }
   }
 
   &__line {
@@ -66,13 +71,19 @@
       top: 0; left: 0; bottom: 0; right: 0;
       background: rgba(0, 0, 0, 0.35);
     }
+
+    &--no_black {
+      &:before {
+        display: none;
+      }
+    }
   }
 
   &__content {
     color: white;
     position: relative;
     z-index: 1;
-    margin: 0 0 0 92px;
+    margin: 0 0 0 calc((100% - 1276px)/2);;
     top: 40%;
     max-width: 730px;
   }

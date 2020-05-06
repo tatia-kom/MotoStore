@@ -28,6 +28,27 @@
       padding: 0 40px;
       position: relative;
     }
+
+    &--white {
+      color: white;
+
+      &:before {
+        background: white;
+      }
+
+      span {
+        background: #2B2E33;
+      }
+    }
+
+    &--big {
+      font-size: 30px;
+      line-height: 37px;
+
+      span {
+        padding: 0 65px;
+      }
+    }
   }
 
   &__wrap {
@@ -46,6 +67,7 @@
   &__button {
     margin: 56px 0 0 50%;
     transform: translateX(-50%);
+    padding: 0 30px;
   }
 }
 
