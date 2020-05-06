@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Оформление брони | MotoStore</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+  
+</head>
+<body>
+
+
+<section class="main-head">
+    <!-- HEADER -->
+
+    <!-- Добавить класс "header--scrolling", если нужна прибитая к верху шапка.
+         Добавить К НЕМУ класс "header--hidden", если нужно скрыть шапку при скролле вниз -->
+
+    <!-- Добавить класс "header--opened_menu", когда меню открыто -->
+    <header class="header">
+        <button class="header__menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="header__menu-label header__menu-label--menu">Меню</span>
+            <span class="header__menu-label header__menu-label--close">Закрыть</span>
+        </button>
+        <form class="search header__form">
+            <input type="text" class="search__input" placeholder="Введите ваш поисковой запрос">
+            <button class="search__button"></button>
+        </form>
+        <button class="button button--blue header__order">Заказать тест-райд</button>
+        <div class="header__basket">Корзина<span>(0)</span></div>
+        <div class="header__logo">
+            <img src="img/logo.svg" alt="">
+            <span>Официальный дилерский центр</span>
+        </div>
+    </header>
+
+    <!-- / HEADER -->
+
+    <!-- CATALOG -->
+
+    <div class="catalog header__catalog">
+        <!-- Добавить класс "catalog__categories--shown" для анимированного появления списка категорий -->
+        <div class="catalog__categories catalog__categories--shown">
+            <span class="catalog__cat catalog__cat--active">Мотоциклы BMW</span>
+            <span class="catalog__cat">Аксессуары</span>
+            <span class="catalog__cat">Сервис</span>
+            <span class="catalog__cat">Владельцам BMW</span>
+            <span class="catalog__cat">Мир BMW</span>
+            <span class="catalog__cat">Дилерский центр</span>
+        </div>
+
+        <!-- Добавить класс "catalog__categories--shown" для анимированного появления списка категорий -->
+        <div class="catalog__categories catalog__categories--shown">
+            <span class="catalog__cat catalog__cat--small">Adventure</span>
+            <span class="catalog__cat catalog__cat--small catalog__cat--active">Roadster</span>
+            <span class="catalog__cat catalog__cat--small">Sport</span>
+            <span class="catalog__cat catalog__cat--small">Tour</span>
+            <span class="catalog__cat catalog__cat--small">Heritage</span>
+            <span class="catalog__cat catalog__cat--small">Maxi-scooter</span>
+            <span class="catalog__cat catalog__cat--small">Мотоциклы с пробегом</span>
+            <span class="catalog__cat catalog__cat--small">Мотоциклы в налиции</span>
+        </div>
+
+        <!-- Добавить класс "catalog__items--shown" для анимированного появления списка товаров -->
+        <div class="catalog__items catalog__items--shown">
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">G 310 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">BMW F 750 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">G 310 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">BMW F 750 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">G 310 GS</a>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                <a href="#">BMW F 750 GS</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- / CATALOG -->
+
+</section>
+
+    <!-- TEST -->
+
+    <section class="test">
+        <div class="container container--middle">
+            <h1 class="test__title test__title--small">Оформить бронь</h1>
+            <p class="test__text">ТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекст</p>
+        </div>
+
+        <div class="container">
+
+            <div class="test__block test__block--center">
+                <p class="test__name">Пожалуйста, введите ваши персональные данные:</p>
+
+                <form class="test-form">
+                    <!-- Можно добавить класс "form-block--error". Появится текст ошибки и рамка у поля станет красной -->
+                    <div class="form-block">
+                        <label class="form-block__label">ФИО</label>
+                        <input type="text" class="form-block__input">
+                        <p class="form-block__hint">Тут текст ошибки</p>
+                    </div>
+
+                    <!-- Можно добавить класс "form-block--error". Появится текст ошибки и рамка у поля станет красной -->
+                    <div class="form-block">
+                        <label class="form-block__label">Предпочтительный способ связи</label>
+                        <div class="form-block-select">
+                            <span class="form-block-select__main">Телефон</span>
+
+                            <!-- Добавить класс "form-block-select__options--opened" для раскрытия списка -->
+                            <div class="form-block-select__options">
+                                <span class="form-block-select__option">E-mail</span>
+                                <span class="form-block-select__option form-block-select__option--chosen">Телефон</span>
+                                <span class="form-block-select__option">Telegram</span>
+                                <span class="form-block-select__option">WhatsApp</span>
+                                <span class="form-block-select__option">Viber</span>
+                            </div>
+                        </div>
+                        <p class="form-block__hint">Тут текст ошибки</p>
+                    </div>
+
+                    <!-- Можно добавить класс "form-block--error". Появится текст ошибки и рамка у поля станет красной -->
+                    <div class="form-block">
+                        <input type="text" class="form-block__input" placeholder="Контактный телефон">
+                        <p class="form-block__hint">Тут текст ошибки</p>
+                    </div>
+
+                    <div class="form-block__add">Добавить номер телефона</div>
+
+                    <!-- Можно добавить класс "form-block--error". Появится текст ошибки и рамка у поля станет красной -->
+                    <div class="form-block">
+                        <input type="text" class="form-block__input" placeholder="Выберите удобную дату звонка">
+                        <p class="form-block__hint">Тут текст ошибки</p>
+                    </div>
+
+                    <!-- Можно добавить класс "form-block--error". Появится текст ошибки и рамка у поля станет красной -->
+                    <div class="form-block">
+                        <input type="text" class="form-block__input" placeholder="Выберите удобное время звонка">
+                        <p class="form-block__hint">Тут текст ошибки</p>
+                    </div>
+
+                    <!-- Можно добавить класс "form-block--error". Рамка у поля станет красной -->
+                    <div class="form-block">
+                        <label class="form-block-checkbox">
+                            <input type="checkbox" class="form-block-checkbox__input" checked>
+                            <div class="form-block-checkbox__text">Даю согласие на обработку персональных данных</div>
+                        </label>
+                    </div>
+
+                    <!-- Можно добавить класс "form-block--error". Рамка у поля станет красной -->
+                    <div class="form-block">
+                        <label class="form-block-checkbox">
+                            <input type="checkbox" class="form-block-checkbox__input">
+                            <div class="form-block-checkbox__text">Принимаю пользовательское соглашение</div>
+                        </label>
+                    </div>
+
+                    <p class="form-block__note">Нажимая на кнопку, Вы даете согласие на получение персональных предложений от компании</p>
+
+                    <p class="form-block__sum">Сумма к оплате: <span class="form-block__price">688 000 ₽</span></p>
+
+                    <button class="button button--blue form-block__button">Оформить бронь</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- / TEST -->
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer__flex">
+            <div class="footer__left">
+                <p class="footer__subscribe-text">Подпишитесь на новостную рассылку BMW Motorrad</p>
+                <button class="button button--subscribe">Будьте в курсе</button>
+                <div class="socials footer__soc">
+                    <a href="#" class="socials__item">
+                        <span class="socials__icon"><img src="img/insta.svg" alt=""></span>
+                        <span class="socials__text">@bmw.kazan</span>
+                    </a>
+                </div>
+                <p class="footer__contacts">
+                    Контакты дилерского центра:<br>
+                    г. Казань, ул. Петербуржская, 50<br>
+                    +123 459 7890
+                </p>
+            </div>
+            <div class="column-menu footer__menu">
+                <div class="column-menu__col">
+                    <a href="#" class="column-menu__link column-menu__link--external">BMW Motorrad Motorsport</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">Автомобили BMW</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">Автомобили MINI</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">BMW Group</a>
+                </div>
+                <div class="column-menu__col">
+                    <a href="#" class="column-menu__link column-menu__link--external">Музей BMW</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">Специальная техника</a>
+                    <a href="#" class="column-menu__link column-menu__link--external">Запрос коммерческого предложения</a>
+                    <a href="#" class="column-menu__link">Как стать дилером BMW Motorrad</a>
+                </div>
+                <div class="column-menu__col">
+                    <a href="#" class="column-menu__link">Cookies</a>
+                    <a href="#" class="column-menu__link">Политика конфиденциальности</a>
+                    <a href="#" class="column-menu__link">Перепечатка информации</a>
+                    <a href="#" class="column-menu__link">Правовая информация</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom">
+        <div class="container bottom__flex">
+            <p class="bottom__copyright">© BMW AG 2019<br>Обратите внимание: Все мотоциклы поставляются с оборудованием, соответствующим требованиям законодательства (например, фильтрами выхлопных газов и боковыми отражателями). Фотографии и видеозаписи мотоциклов, представленных на этом сайте, могут незначительно отличаться от моделей для российского рынка.</p>
+
+            <div class="bottom__logo"><img src="img/bottom-logo.png" alt=""></div>
+
+            <!-- Анимация будет при добавлении класса "bottom__slogan--lined" -->
+            <span class="bottom__slogan bottom__slogan--lined">MAKE LIFE A RIDE</span>
+        </div>
+    </div>
+
+    <!-- / FOOTER -->
+
+</body>
+</html>

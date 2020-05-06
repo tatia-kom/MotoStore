@@ -8,15 +8,29 @@
     font-weight: bold;
     font-size: 58px;
     line-height: 71px;
+
+    &--small {
+      font-size: 30px;
+      line-height: 37px;
+
+      & + .test__text {
+        margin-top: 20px;
+      }
+    }
   }
 
   &__block {
     padding: 20px 0 25px;
     border-bottom: 1px solid rgba(193, 192, 192, 0.5);
+    max-width: 485px;
 
     &:last-child {
       border-bottom: 0;
       padding-bottom: 0;
+    }
+
+    &--center {
+      margin: 0 auto;
     }
   }
 
@@ -46,10 +60,18 @@
       background: url('../img/test-icon.svg');
     }
   }
+
+  &__text {
+    font-size: 16px;
+    line-height: 107.19%;
+    word-break: break-word;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
 }
 
 .test-form {
-  max-width: 482px;
+
 }
 
 .form-block {
@@ -122,6 +144,17 @@
     font-size: 10px;
     line-height: 14px;
     margin-top: 12px;
+  }
+
+  &__sum {
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__price {
+    font-weight: bold;
+    margin-left: 15px;
   }
 
   &__button {
