@@ -1,0 +1,172 @@
+@import "layout/var";
+
+.product-tech {
+  &__title {
+    font-family: $itemFont;
+    font-weight: bold;
+    font-size: 66px;
+    line-height: 60px;
+    padding: 56px 0 37px;
+  }
+
+  &__subtitle {
+    font-family: $itemFont;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  &__text {
+    margin-top: 27px;
+    font-family: $itemFont;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 70px;
+  }
+
+  &__name {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $itemFont;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    margin-top: 48px;
+  }
+
+  &__items {
+    padding-bottom: 37px;
+
+    .product-with__flex {
+      margin: 12px 0 0 -42px;
+      width: calc(100% + 84px);
+    }
+  }
+
+  &__up {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+    position: relative;
+    padding-left: 17px;
+    margin-left: 50%;
+    margin-top: 18px;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 12px;
+      height: 7px;
+      background: url('../img/up-icon.svg');
+    }
+  }
+}
+
+.product-tech-block {
+  margin: 52px 0 0;
+  display: flex;
+  font-family: $serviceFontRegular;
+
+  &__caption {
+    width: 232px;
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__content {
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  &__option {
+    padding-left: 19px;
+    transition: 0.3s;
+    display: flex;
+
+    &:first-child {
+      .product-tech-block__name:before,
+      .product-tech-block__info:before {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background: #E6E6E6;
+
+      .product-tech-block__name {
+        background: #E6E6E6;
+
+        &:before {
+          opacity: 0;
+        }
+      }
+
+      & + .product-tech-block__option {
+        .product-tech-block__name {
+          &:before {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__name {
+    width: 351px;
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 20px 27px;
+    background: #F2F2F2;
+    transition: 0.3s;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 1px;
+      background: white;
+      transition: 0.3s;
+    }
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 20px 27px;
+    position: relative;
+    width: 100%;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 1px;
+      background: #F2F2F2;
+      transition: 0.3s;
+    }
+  }
+
+  &__button {
+    width: 275px;
+    margin-left: 19px;
+    font-family: $serviceFontRegular;
+  }
+}

@@ -98,6 +98,15 @@
 
 </section>
 
+    <!-- PRODUCT TABS -->
+    <div class="product-tabs">
+        <div class="container container--max product-tabs__flex">
+            <a href="#" class="product-tabs__item product-tabs__item--active">Название модели</a>
+            <a href="#" class="product-tabs__item">Технические характеристики</a>
+        </div>
+    </div>
+    <!-- / PRODUCT TABS -->
+
     <!-- TOP -->
 
     <section class="top">
@@ -105,7 +114,7 @@
         <div class="top-slider">
             <!-- SLIDE -->
             <div class="top-item">
-                <div class="top-item__image top-item__image--no_black" style="background-image: url('img/product2-photo.png')"></div>
+                <div class="top-item__image top-item__image--no_black" style="background-image: url('img/product-photo.png')"></div>
             </div>
             <!-- / SLIDE -->
         </div>
@@ -123,11 +132,12 @@
 
         <!-- Добавить класс "product-info--shown" для анимированного появления блока информации о товаре -->
         <div class="product-info product-info--shown">
-            <p class="product-info__name">Спортивный глушитель HP</p>
-            <p class="product-info__price">18 000 ₽</p>
-            <div class="product-info__description">Глушитель HP, 100% титан.</div>
-            <button class="button button--product_order product-info__button"><span>Добавить в корзину</span></button>
+            <p class="product-info__name product-info__name--small">Данные и оборудование BMW S 1000 XR</p>
+            <p class="product-info__price product-info__price--big_top">170 000 ₽</p>
+            <div class="product-info__description product-info__description--small">Асфальт или песок, лесные тропинки или каменистые овраги - любые дороги по силам для BMW S 1000 XR. Он сочетает в себе комфорт, динамику и проходимость – лучшие черты всех наших мотоциклов. Для тех, кто не привык выбирать. Узнайте больше о технических характеристиках и стандартном оснащении S 1000 XR.</div>
+            <button class="button button--product_white product-info__button">Заказать пробную поездку</button>
             <button class="button button--product product-info__button">Скачать спецификацию</button>
+            <button class="button button--product_order_reverse product-info__button"><span>В корзину</span></button>
         </div>
         <!-- / PRODUCT INFO -->
 
@@ -137,69 +147,65 @@
 
     <!-- PRODUCT -->
 
-    <section class="product-with">
+    <section class="product-with product">
         <div class="container container--max">
-            <h2 class="items__title items__title--white items__title--big"><span>Сопутствующее оборудование</span></h2>
+            <h2 class="items__title items__title--big"><span>Сопутствующее оборудование</span></h2>
 
-            <div class="product-with__items">
-                <div class="product-with__flex">
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Топкейс на 29 л</p>
-                        <p class="item-block__description">Водонепроницаемый пластиковый топкейс. Достаточно пространства для хранения вещей и шлема.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
+            <!-- Убрать style, когда будет подключен слайдер -->
+            <div class="product-slider" style="display: flex">
+                <div class="item-block product-slider__slide" style="width: 33%">
+                    <div class="item-block__image-wrap">
+                        <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
                     </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Багажник</p>
-                        <p class="item-block__description">Высококачественный багажник. Сочетает в себе потрясающие формы с оптимальной функциональностью.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
+                    <p class="item-block__name product-slider__price">10 000 ₽</p>
+                    <p class="item-block__name">Топкейс на 29 л</p>
+                    <p class="item-block__description">Водонепроницаемый пластиковый топкейс. Достаточно пространства для хранения вещей и шлема.</p>
+                    <button class="button button--to_basket item-block__button">В корзину</button>
+                </div>
+                <div class="item-block product-slider__slide" style="width: 33%">
+                    <div class="item-block__image-wrap">
+                        <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
                     </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Светодиодные указатели поворота</p>
-                        <p class="item-block__description">Указатели поворота с современной светодиодной подсветкой.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
-                    </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Спортивный глушитель HP</p>
-                        <p class="item-block__description">Глушитель HP, 100% титан.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
-                    </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Туристические багажники</p>
-                        <p class="item-block__description">Жесткий, брызгозащищенный пластиковый кофр.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
-                    </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Спортивное сиденье HP</p>
-                        <p class="item-block__description">Комфортное и эффектное.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
-                    </div>
+                    <p class="item-block__name">10 000 ₽</p>
+                    <p class="item-block__name">Багажник</p>
+                    <p class="item-block__description">Высококачественный багажник. Сочетает в себе потрясающие формы с оптимальной функциональностью.</p>
+                    <button class="button button--to_basket item-block__button">В корзину</button>
+                </div>
+                <div class="item-block product-slider__slide product-slider__slide--more" style="width: 33%">
+                    <span>Смотреть всё дополнительное оборудование</span>
+                    <img src="img/external-icon-white.svg" alt="">
                 </div>
 
-                <button class="button button--grey product-with__button">Показать больше</button>
+                <button class="product-slider__arrow"></button>
+            </div>
+
+            <h2 class="items__title items__title--big"><span>Экипировка</span></h2>
+
+            <!-- Убрать style, когда будет подключен слайдер -->
+            <div class="product-slider" style="display: flex">
+                <div class="item-block product-slider__slide" style="width: 33%">
+                    <div class="item-block__image-wrap">
+                        <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
+                    </div>
+                    <p class="item-block__name product-slider__price">10 000 ₽</p>
+                    <p class="item-block__name">Топкейс на 29 л</p>
+                    <p class="item-block__description">Водонепроницаемый пластиковый топкейс. Достаточно пространства для хранения вещей и шлема.</p>
+                    <button class="button button--to_basket item-block__button">В корзину</button>
+                </div>
+                <div class="item-block product-slider__slide" style="width: 33%">
+                    <div class="item-block__image-wrap">
+                        <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
+                    </div>
+                    <p class="item-block__name">10 000 ₽</p>
+                    <p class="item-block__name">Багажник</p>
+                    <p class="item-block__description">Высококачественный багажник. Сочетает в себе потрясающие формы с оптимальной функциональностью.</p>
+                    <button class="button button--to_basket item-block__button">В корзину</button>
+                </div>
+                <div class="item-block product-slider__slide product-slider__slide--more" style="width: 33%">
+                    <span class="center">Смотреть всю экипировку <img src="img/external-icon-white.svg" alt=""></span>
+                </div>
+
+                <button class="product-slider__arrow"></button>
             </div>
         </div>
     </section>

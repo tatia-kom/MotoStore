@@ -12,6 +12,7 @@
 
     &--max_container {
       left: calc((100% - 1353px)/2);
+      bottom: 36px;
     }
   }
 
@@ -30,6 +31,12 @@
       content: '';
       display: block;
       padding-top: 34.72%;
+    }
+
+    &--small {
+      &:before {
+        padding-top: 27.9%;
+      }
     }
   }
 

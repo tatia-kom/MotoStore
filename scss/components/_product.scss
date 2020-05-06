@@ -1,5 +1,35 @@
 @import "layout/var";
 
+.product-tabs {
+  font-family: $itemFont;
+
+  &__flex {
+    display: flex;
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark;
+    display: block;
+    padding: 10px 0;
+    margin-right: 35px;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &--active {
+      font-weight: 800;
+      cursor: default;
+
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+}
+
 .product-info {
   color: white;
   position: absolute;
@@ -24,6 +54,11 @@
     font-size: 30px;
     line-height: 37px;
     width: 105%;
+
+    &--small {
+      font-size: 28px;
+      line-height: 34px;
+    }
   }
 
   &__price {
@@ -31,6 +66,10 @@
     font-size: 26px;
     line-height: 32px;
     margin-top: 8px;
+
+    &--big_top {
+      margin-top: 21px;
+    }
   }
 
   &__description {
@@ -42,6 +81,11 @@
     min-height: 50%;
     max-height: 100%;
     overflow: auto;
+
+    &--small {
+      min-height: 0;
+      margin-bottom: auto;
+    }
   }
 
   &__button {
@@ -136,5 +180,93 @@
     margin: 14px 0 0 50%;
     transform: translateX(-50%);
     padding: 0 30px;
+  }
+}
+
+.product {
+  padding: 54px 0 0;
+
+  &:before {
+    display: none;
+  }
+}
+
+.product-slider {
+  margin-top: 51px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 37px;
+
+  &__slide {
+    padding-right: 40px;
+
+    &--more {
+      background: $blue;
+      color: white;
+      padding: 34px 74px 34px 34px;
+      font-family: $textFont;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 118.69%;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40px;
+        background: white;
+      }
+
+      img {
+        margin-top: 9px;
+      }
+
+      span {
+        &.center {
+          text-align: center;
+          width: 100%;
+          display: block;
+        }
+
+        img {
+          margin: 0 0 0 15px;
+        }
+      }
+    }
+
+    .item-block__name {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .item-block__description {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 141.9%;
+    }
+  }
+
+  &__price {
+    font-size: 18px!important;
+    line-height: 22px!important;
+  }
+
+  &__arrow {
+    width: 17px;
+    height: 27px;
+    background: url('../img/product-arrow.svg');
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
   }
 }

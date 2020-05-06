@@ -4,7 +4,7 @@
     <meta http-equiv="text/html" charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Карточка товара | MotoStore</title>
+    <title>Технические характеристики товара | MotoStore</title>
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
   
 </head>
@@ -98,113 +98,149 @@
 
 </section>
 
+    <!-- PRODUCT TABS -->
+    <div class="product-tabs">
+        <div class="container container--max product-tabs__flex">
+            <a href="#" class="product-tabs__item">Название модели</a>
+            <a href="#" class="product-tabs__item product-tabs__item--active">Технические характеристики</a>
+        </div>
+    </div>
+    <!-- / PRODUCT TABS -->
+
     <!-- TOP -->
 
     <section class="top">
-        <!-- SLIDER -->
-        <div class="top-slider">
-            <!-- SLIDE -->
-            <div class="top-item">
-                <div class="top-item__image top-item__image--no_black" style="background-image: url('img/product2-photo.png')"></div>
-            </div>
-            <!-- / SLIDE -->
+        <div class="top__image-wrap top__image-wrap--small">
+            <div class="top__image" style="background-image: url(img/product-tech-photo.png)"></div>
         </div>
-        <!-- / SLIDER -->
-
-        <!-- SLIDER NAV -->
-        <div class="top-slider-nav top__nav top__nav--max_container">
-            <button class="top-slider-nav__arrow top-slider-nav__arrow--prev"></button>
-            <span class="top-slider-nav__count">1/5</span>
-            <button class="top-slider-nav__arrow top-slider-nav__arrow--next"></button>
-        </div>
-        <!-- / SLIDER NAV -->
-
-        <!-- PRODUCT INFO -->
-
-        <!-- Добавить класс "product-info--shown" для анимированного появления блока информации о товаре -->
-        <div class="product-info product-info--shown">
-            <p class="product-info__name">Спортивный глушитель HP</p>
-            <p class="product-info__price">18 000 ₽</p>
-            <div class="product-info__description">Глушитель HP, 100% титан.</div>
-            <button class="button button--product_order product-info__button"><span>Добавить в корзину</span></button>
-            <button class="button button--product product-info__button">Скачать спецификацию</button>
-        </div>
-        <!-- / PRODUCT INFO -->
-
     </section>
 
     <!-- / TOP -->
 
-    <!-- PRODUCT -->
+    <!-- PRODUCT TECH -->
 
-    <section class="product-with">
-        <div class="container container--max">
-            <h2 class="items__title items__title--white items__title--big"><span>Сопутствующее оборудование</span></h2>
+    <section class="product-tech">
+        <div class="container container--middle">
+            <h1 class="product-tech__title">Данные и оборудование</h1>
+            <p class="product-tech__subtitle">BMW S 1000 XR</p>
+            <div class="product-tech__text">Асфальт или песок, лесные тропинки или каменистые овраги - любые дороги по силам для BMW S 1000 XR. Он сочетает в себе комфорт, динамику и проходимость – лучшие черты всех наших мотоциклов. Для тех, кто не привык выбирать. Узнайте больше о технических характеристиках и стандартном оснащении S 1000 XR.</div>
 
-            <div class="product-with__items">
-                <div class="product-with__flex">
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Топкейс на 29 л</p>
-                        <p class="item-block__description">Водонепроницаемый пластиковый топкейс. Достаточно пространства для хранения вещей и шлема.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
+            <div class="items__title"><span><img src="img/tech-icon.svg" alt=""></span></div>
+
+            <h2 class="product-tech__name">ТЕХНИЧЕСКИЕ ДАННЫЕ</h2>
+
+            <div class="product-tech-block">
+                <div class="product-tech-block__caption">Трансмиссия</div>
+                <div class="product-tech-block__content">
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Сцепление</div>
+                        <div class="product-tech-block__info">Проскальзывающее сцепление в масляной ванне с гидравлическим приводом</div>
                     </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Багажник</p>
-                        <p class="item-block__description">Высококачественный багажник. Сочетает в себе потрясающие формы с оптимальной функциональностью.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Коробка передач</div>
+                        <div class="product-tech-block__info">Шестиступенчатая коробка передач со зубьями постоянного зацепления и синхронизаторами</div>
                     </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Светодиодные указатели поворота</p>
-                        <p class="item-block__description">Указатели поворота с современной светодиодной подсветкой.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Передача крутящего момента</div>
+                        <div class="product-tech-block__info">Карданный вал</div>
                     </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Спортивный глушитель HP</p>
-                        <p class="item-block__description">Глушитель HP, 100% титан.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
-                    </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Туристические багажники</p>
-                        <p class="item-block__description">Жесткий, брызгозащищенный пластиковый кофр.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
-                    </div>
-                    <div class="item-block product-with__item">
-                        <div class="item-block__image-wrap">
-                            <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
-                        </div>
-                        <p class="item-block__name">10 000 ₽</p>
-                        <p class="item-block__name">Спортивное сиденье HP</p>
-                        <p class="item-block__description">Комфортное и эффектное.</p>
-                        <button class="button button--to_basket item-block__button">В корзину</button>
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Рама</div>
+                        <div class="product-tech-block__info">Трубчатая стальная рама с литой алюминиевой задней частью</div>
                     </div>
                 </div>
+            </div>
 
-                <button class="button button--grey product-with__button">Показать больше</button>
+            <div class="product-tech-block">
+                <div class="product-tech-block__caption">Шасси / тормозная система</div>
+                <div class="product-tech-block__content">
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Передняя подвеска</div>
+                        <div class="product-tech-block__info">Перевернутая вилка, Ø 40 мм</div>
+                    </div>
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Задняя подвеска</div>
+                        <div class="product-tech-block__info">Односторонний маятник</div>
+                    </div>
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Ход подвески, спереди/сзади</div>
+                        <div class="product-tech-block__info">140 мм / 140 мм</div>
+                    </div>
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Колесная база</div>
+                        <div class="product-tech-block__info">1,515 мм</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-tech-block">
+                <div class="product-tech-block__caption">Габариты / масса</div>
+                <div class="product-tech-block__content">
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Длина</div>
+                        <div class="product-tech-block__info">2,202 мм</div>
+                    </div>
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Ширина (включая зеркала)</div>
+                        <div class="product-tech-block__info">880 мм</div>
+                    </div>
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Высота (без зеркал)</div>
+                        <div class="product-tech-block__info">1,300 мм</div>
+                    </div>
+                    <div class="product-tech-block__option">
+                        <div class="product-tech-block__name">Высота сиденья, без нагрузки</div>
+                        <div class="product-tech-block__info">Стандартное сиденье: 820 мм</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-tech-block">
+                <div class="product-tech-block__caption"></div>
+                <div class="product-tech-block__content">
+                    <button class="button button--grey product-tech-block__button">Заказать пробную поездку</button>
+                    <button class="button button--transparent product-tech-block__button">Скачать спецификацию</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- / PRODUCT -->
+    <!-- / PRODUCT TECH -->
+
+
+    <div class="container product-tech__items">
+        <div class="product-with__flex">
+            <div class="item-block product-with__item">
+                <div class="item-block__image-wrap">
+                    <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
+                </div>
+                <p class="item-block__name">10 000 ₽</p>
+                <p class="item-block__name">Топкейс на 29 л</p>
+                <p class="item-block__description">Водонепроницаемый пластиковый топкейс. Достаточно пространства для хранения вещей и шлема.</p>
+                <button class="button button--to_basket item-block__button">В корзину</button>
+            </div>
+            <div class="item-block product-with__item">
+                <div class="item-block__image-wrap">
+                    <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
+                </div>
+                <p class="item-block__name">10 000 ₽</p>
+                <p class="item-block__name">Багажник</p>
+                <p class="item-block__description">Высококачественный багажник. Сочетает в себе потрясающие формы с оптимальной функциональностью.</p>
+                <button class="button button--to_basket item-block__button">В корзину</button>
+            </div>
+            <div class="item-block product-with__item">
+                <div class="item-block__image-wrap">
+                    <div class="item-block__image" style="background-image: url(img/item1.png)"></div>
+                </div>
+                <p class="item-block__name">10 000 ₽</p>
+                <p class="item-block__name">Светодиодные указатели поворота</p>
+                <p class="item-block__description">Указатели поворота с современной светодиодной подсветкой.</p>
+                <button class="button button--to_basket item-block__button">В корзину</button>
+            </div>
+        </div>
+
+        <span class="product-tech__up">Наверх</span>
+    </div>
 
     <!-- FOOTER -->
 

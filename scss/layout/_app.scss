@@ -227,7 +227,7 @@ footer {
             position: absolute;
             width: 29px;
             height: 20px;
-            background: url('../img/order-icon-blue.svg') center no-repeat;
+            background: url('../img/order-icon-white.svg') center no-repeat;
             background-size: cover;
             left: 19px;
             top: 7px;
@@ -236,8 +236,9 @@ footer {
         }
 
         &:hover {
-            color: $blue;
+            color: white;
             border-color: $blue;
+            background: $blue;
 
             &:after {
                 opacity: 1;
@@ -257,42 +258,116 @@ footer {
         }
     }
 
+    &--product_white {
+        background: white;
+        border: 2px solid white;
+        width: 100%;
+
+        &:hover {
+            background: transparent;
+            color: white;
+        }
+    }
+
     &--product_order {
         background: white;
         width: 100%;
 
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 29px;
-            height: 20px;
-            background: url('../img/order-icon.svg') center no-repeat;
-            background-size: cover;
-            left: 65px;
-            top: 8px;
-        }
+        span {
+            position: relative;
+            padding-left: 37px;
 
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 29px;
-            height: 20px;
-            background: url('../img/order-icon-blue.svg') center no-repeat;
-            background-size: cover;
-            left: 65px;
-            top: 8px;
-            opacity: 0;
-            transition: 0.3s;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 29px;
+                height: 20px;
+                background: url('../img/order-icon.svg') center no-repeat;
+                background-size: cover;
+                left: 0;
+                top: 0;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 29px;
+                height: 20px;
+                background: url('../img/order-icon-blue.svg') center no-repeat;
+                background-size: cover;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                transition: 0.3s;
+            }
         }
 
         &:hover {
             color: $blue;
 
-            &:after {
+            span:after {
                 opacity: 1;
             }
+        }
+    }
+
+    &--product_order_reverse {
+        background: transparent;
+        width: 100%;
+        border: 2px solid white;
+        color: white;
+
+        span {
+            position: relative;
+            padding-left: 37px;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 29px;
+                height: 20px;
+                background: url('../img/order-icon-white.svg') center no-repeat;
+                background-size: cover;
+                left: 0;
+                top: 0;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 29px;
+                height: 20px;
+                background: url('../img/order-icon-blue.svg') center no-repeat;
+                background-size: cover;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                transition: 0.3s;
+            }
+        }
+
+        &:hover {
+            background: white;
+            color: $blue;
+
+            span:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &--transparent {
+        background: transparent;
+        color: $dark;
+        border: 2px solid $dark;
+
+        &:hover {
+            border-color: $blue;
+            color: $blue;
         }
     }
 }
