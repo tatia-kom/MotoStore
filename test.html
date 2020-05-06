@@ -32,7 +32,10 @@
         </form>
         <button class="button button--blue header__order">Заказать тест-райд</button>
         <div class="header__basket">Корзина<span>(0)</span></div>
-        <div class="header__logo"><img src="img/logo.svg" alt=""></div>
+        <div class="header__logo">
+            <img src="img/logo.svg" alt="">
+            <span>Официальный дилерский центр</span>
+        </div>
     </header>
 
     <!-- / HEADER -->
@@ -44,10 +47,10 @@
         <div class="catalog__categories catalog__categories--shown">
             <span class="catalog__cat catalog__cat--active">Мотоциклы BMW</span>
             <span class="catalog__cat">Аксессуары</span>
-            <span class="catalog__cat">Владельцам BMW</span>
             <span class="catalog__cat">Сервис</span>
+            <span class="catalog__cat">Владельцам BMW</span>
             <span class="catalog__cat">Мир BMW</span>
-            <span class="catalog__cat">Тест-райд</span>
+            <span class="catalog__cat">Дилерский центр</span>
         </div>
 
         <!-- Добавить класс "catalog__categories--shown" для анимированного появления списка категорий -->
@@ -218,8 +221,16 @@
                 <p class="footer__subscribe-text">Подпишитесь на новостную рассылку BMW Motorrad</p>
                 <button class="button button--subscribe">Будьте в курсе</button>
                 <div class="socials footer__soc">
-                    <a href="#" class="socials__item"><img src="img/insta.svg" alt=""></a>
+                    <a href="#" class="socials__item">
+                        <span class="socials__icon"><img src="img/insta.svg" alt=""></span>
+                        <span class="socials__text">@bmw.kazan</span>
+                    </a>
                 </div>
+                <p class="footer__contacts">
+                    Контакты дилерского центра:<br>
+                    г. Казань, ул. Петербуржская, 50<br>
+                    +123 459 7890
+                </p>
             </div>
             <div class="column-menu footer__menu">
                 <div class="column-menu__col">
@@ -246,6 +257,9 @@
     <div class="bottom">
         <div class="container bottom__flex">
             <p class="bottom__copyright">© BMW AG 2019<br>Обратите внимание: Все мотоциклы поставляются с оборудованием, соответствующим требованиям законодательства (например, фильтрами выхлопных газов и боковыми отражателями). Фотографии и видеозаписи мотоциклов, представленных на этом сайте, могут незначительно отличаться от моделей для российского рынка.</p>
+
+            <div class="bottom__logo"><img src="img/bottom-logo.png" alt=""></div>
+
             <!-- Анимация будет при добавлении класса "bottom__slogan--lined" -->
             <span class="bottom__slogan bottom__slogan--lined">MAKE LIFE A RIDE</span>
         </div>

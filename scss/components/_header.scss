@@ -2,7 +2,7 @@
 
 .header {
   width: 100%;
-  padding: 16px 40px;
+  padding: 12px 40px 11px;
   display: flex;
   align-items: center;
   z-index: 1002;
@@ -160,6 +160,20 @@
 
   &__logo {
     margin-left: 35px;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
+
+    img {
+      width: 179px;
+    }
+
+    span {
+      font-weight: 900;
+      font-size: 10px;
+      color: black;
+      line-height: 13px;
+      margin-left: 51px;
+    }
   }
 }
