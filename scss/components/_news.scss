@@ -10,6 +10,10 @@
 
   &--big_padding {
     padding: 72px 0 106px;
+
+    @media (max-width: $xs) {
+      padding: 5px 0 30px;
+    }
   }
 
   .container {
