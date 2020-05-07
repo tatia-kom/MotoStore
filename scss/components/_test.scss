@@ -54,6 +54,10 @@
     border-bottom: 1px solid rgba(193, 192, 192, 0.5);
     max-width: 485px;
 
+    @media (max-width: $xs) {
+      padding-bottom: 0;
+    }
+
     &:last-child {
       border-bottom: 0;
       padding-bottom: 0;
