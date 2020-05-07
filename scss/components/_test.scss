@@ -3,18 +3,48 @@
 .test {
   padding: 40px 0 70px;
 
+  @media (max-width: $md) {
+    padding: 30px 0 70px;
+  }
+
+  @media (max-width: $sm) {
+    padding: 15px 0 30px;
+  }
+
+  @media (max-width: $xs) {
+    padding: 15px 0 30px;
+  }
+
   &__title {
     font-family: $itemFont;
     font-weight: bold;
     font-size: 58px;
     line-height: 71px;
 
+    @media (max-width: $md) {
+      font-size: 48px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
     &--small {
       font-size: 30px;
       line-height: 37px;
 
+      @media (max-width: $xs) {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
       & + .test__text {
         margin-top: 20px;
+
+        @media (max-width: $xs) {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -39,12 +69,21 @@
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 25px;
+
+    @media (max-width: $xs) {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
   }
 
   &__condition {
     font-size: 18px;
     position: relative;
     margin-bottom: 11px;
+
+    @media (max-width: $xs) {
+      font-size: 16px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -67,6 +106,12 @@
     word-break: break-word;
     margin-bottom: 20px;
     text-align: justify;
+
+    @media (max-width: $xs) {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -97,6 +142,10 @@
     line-height: 9px;
     display: block;
 
+    @media (max-width: $xs) {
+      font-size: 16px;
+    }
+
     & + .form-block__input, & + .form-block-select {
       margin-top: 11px;
     }
@@ -109,6 +158,10 @@
     font-size: 18px;
     padding: 0 13px;
     transition: 0.3s;
+
+    @media (max-width: $xs) {
+      font-size: 16px;
+    }
 
     @include placeholderColor($dark);
   }
@@ -126,6 +179,10 @@
     padding: 2px 0 0 30px;
     cursor: pointer;
     margin-top: 12px;
+
+    @media (max-width: $xs) {
+      font-size: 16px;
+    }
 
     &:before {
       content: '';
@@ -174,6 +231,10 @@
   font-size: 18px;
   padding: 8px 13px;
   cursor: pointer;
+
+  @media (max-width: $xs) {
+    font-size: 16px;
+  }
 
   &:after {
     content: '';
@@ -253,6 +314,10 @@
     padding: 2px 0 0 29px;
     text-decoration: underline;
     cursor: pointer;
+
+    @media (max-width: $xs) {
+      font-size: 14px;
+    }
 
     &:before {
       content: '';
