@@ -82,6 +82,10 @@
       @media (max-width: $xs) {
         transform: translateY(37px);
       }
+
+      .catalog__items--shown {
+        opacity: 1;
+      }
     }
   }
 
