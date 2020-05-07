@@ -298,12 +298,6 @@
     @media (max-width: $sm) {
       width: 34px;
     }
-
-    @media (max-width: $xs) {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    }
   }
 
   &__input {
@@ -318,6 +312,13 @@
       font-size: 16px;
       line-height: 24px;
       width: 40px;
+    }
+
+    @media (max-width: $xs) {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 0;
     }
   }
 }
