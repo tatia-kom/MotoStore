@@ -25,11 +25,31 @@
 
     @media (max-width: $xs) {
       left: 15px;
+      bottom: auto;
+      top: 263px;
     }
 
     &--max_container {
       left: calc((100% - 1353px)/2);
       bottom: 36px;
+
+      @media (max-width: $lg) {
+        left: calc((100% - 1140px)/2);
+        bottom: 30px;
+      }
+
+      @media (max-width: $md) {
+        left: calc((100% - 932px)/2);
+      }
+
+      @media (max-width: $sm) {
+        left: calc((100% - 708px)/2);
+      }
+
+      @media (max-width: $xs) {
+        left: 15px;
+        bottom: auto;
+      }
     }
   }
 

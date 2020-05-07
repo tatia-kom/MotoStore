@@ -15,6 +15,11 @@
     padding: 10px 0;
     margin-right: 35px;
 
+    @media (max-width: $xs) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
     &:hover {
       color: $blue;
     }
@@ -45,6 +50,21 @@
   display: flex;
   flex-direction: column;
 
+  @media (max-width: $md) {
+    padding: 30px;
+  }
+
+  @media (max-width: $sm) {
+    width: 45%;
+  }
+
+  @media (max-width: $xs) {
+    position: relative;
+    width: 100%;
+    background: $dark;
+    padding: 15px;
+  }
+
   &--shown {
     transform: translateX(0);
   }
@@ -58,6 +78,17 @@
     &--small {
       font-size: 28px;
       line-height: 34px;
+
+      @media (max-width: $md) {
+        font-size: 24px;
+        line-height: 30px;
+        width: 100%;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
   }
 
@@ -67,8 +98,24 @@
     line-height: 32px;
     margin-top: 8px;
 
+    @media (max-width: $md) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 16px;
+    }
+
     &--big_top {
       margin-top: 21px;
+
+      @media (max-width: $md) {
+        margin-top: 10px;
+      }
+
+      @media (max-width: $sm) {
+        margin-top: 5px;
+      }
     }
   }
 
@@ -82,6 +129,22 @@
     max-height: 100%;
     overflow: auto;
 
+    @media (max-width: $md) {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 10px 0;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 12px;
+      line-height: 14px;
+      margin: 5px 0 15px;
+    }
+
+    @media (max-width: $xs) {
+      min-height: 100%;
+    }
+
     &--small {
       min-height: 0;
       margin-bottom: auto;
@@ -91,6 +154,23 @@
   &__button {
     margin-top: 12px;
     flex-shrink: 0;
+
+    @media (min-width: 768px) and (max-width: $sm) {
+      font-size: 12px;
+      margin-top: 10px;
+      height: 26px;
+
+      span {
+        &:before {
+          width: 23px;
+          height: 16px;
+        }
+      }
+    }
+
+    @media (max-width: $xs) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -128,6 +208,19 @@
     width: 33.33%;
     position: relative;
 
+    @media (max-width: $lg) {
+      padding: 30px;
+    }
+
+    @media (max-width: $sm) {
+      padding: 15px;
+    }
+
+    @media (max-width: $xs) {
+      width: 100%;
+      padding: 15px 0;
+    }
+
     &:before {
       content: '';
       display: block;
@@ -137,6 +230,20 @@
       top: 42px;
       bottom: 42px;
       background: rgba(0, 0, 0, 0.1);
+
+      @media (max-width: $lg) {
+        top: 30px;
+        bottom: 30px;
+      }
+
+      @media (max-width: $sm) {
+        top: 15px;
+        bottom: 15px;
+      }
+
+      @media (max-width: $xs) {
+        display: none;
+      }
     }
 
     &:after {
@@ -148,12 +255,24 @@
       top: 100%;
       height: 1px;
       background: rgba(0, 0, 0, 0.1);
+
+      @media (max-width: $xs) {
+        display: none;
+      }
     }
 
     &:nth-child(1),
     &:nth-child(4n+4) {
       &:after {
         left: 42px;
+
+        @media (max-width: $lg) {
+          left: 30px;
+        }
+
+        @media (max-width: $sm) {
+          left: 15px;
+        }
       }
     }
 
@@ -164,6 +283,14 @@
 
       &:after {
         right: 42px;
+
+        @media (max-width: $lg) {
+          right: 30px;
+        }
+
+        @media (max-width: $sm) {
+          right: 15px;
+        }
       }
     }
 
@@ -186,6 +313,14 @@
 .product {
   padding: 54px 0 0;
 
+  @media (max-width: $sm) {
+    padding-top: 30px;
+  }
+
+  @media (max-width: $xs) {
+    overflow: hidden;
+  }
+
   &:before {
     display: none;
   }
@@ -197,8 +332,17 @@
   position: relative;
   padding-bottom: 37px;
 
+  @media (max-width: $sm) {
+    margin-top: 30px;
+    padding-bottom: 15px;
+  }
+
   &__slide {
     padding-right: 40px;
+
+    @media (max-width: $md) {
+      padding-right: 20px;
+    }
 
     &--more {
       background: $blue;
@@ -214,6 +358,14 @@
       flex-direction: column;
       justify-content: center;
 
+      @media (max-width: $md) {
+        padding-right: 54px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 18px;
+      }
+
       &:after {
         content: '';
         display: block;
@@ -223,6 +375,10 @@
         bottom: 0;
         width: 40px;
         background: white;
+
+        @media (max-width: $md) {
+          width: 20px;
+        }
       }
 
       img {
@@ -238,6 +394,12 @@
 
         img {
           margin: 0 0 0 15px;
+
+          @media (max-width: $sm) {
+            margin-top: 10px;
+            margin-left: 50%;
+            display: block;
+          }
         }
       }
     }
