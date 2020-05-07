@@ -1,0 +1,20 @@
+@import "layout/var";
+
+.insurance {
+  &__title {
+    margin-top: 20px;
+  }
+
+  &__name {
+    font-family: $textFont;
+  }
+
+  &__more {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  p + .insurance__title {
+    margin-top: 40px;
+  }
+}

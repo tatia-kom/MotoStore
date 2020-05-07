@@ -31,6 +31,9 @@
   border: 1px solid rgba(57, 57, 57, 0.2);
   padding: 33px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   &:hover {
     .special-block__line {
@@ -47,6 +50,7 @@
     height: 284px;
     background-size: cover;
     background-position: center;
+    flex-shrink: 0;
   }
 
   &__title {
@@ -57,6 +61,7 @@
     margin-top: 16px;
     display: block;
     text-transform: uppercase;
+    margin-bottom: 12px;
   }
 
   &__line {
@@ -64,8 +69,8 @@
     height: 4px;
     background: $dark;
     transition: 0.3s;
-    margin-top: 12px;
     margin-bottom: 13px;
+    margin-top: auto;
   }
 
   &__date {
