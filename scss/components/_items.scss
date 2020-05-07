@@ -3,6 +3,11 @@
 .items {
   padding: 30px 0 37px;
 
+  @media (max-width: $xs) {
+    padding-top: 0;
+    overflow: hidden;
+  }
+
   &__title {
     font-family: $itemFont;
     font-weight: 800;
@@ -10,6 +15,15 @@
     line-height: 32px;
     text-align: center;
     position: relative;
+
+    @media (max-width: $sm) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 20px;
+      line-height: 24px;
+    }
 
     &:before {
       content: '';
@@ -28,6 +42,15 @@
       padding: 0 40px;
       position: relative;
       display: inline-block;
+
+      @media (max-width: $sm) {
+        padding: 0 30px;
+      }
+
+      @media (max-width: $xs) {
+        padding: 0 15px;
+        max-width: 225px;
+      }
     }
 
     &--white {
@@ -72,6 +95,15 @@
     &--big_padding {
       span {
         padding: 0 80px;
+
+        @media (max-width: $sm) {
+          padding: 0 40px;
+        }
+
+        @media (max-width: $xs) {
+          padding: 0 15px;
+          max-width: 225px;
+        }
       }
     }
   }
@@ -82,11 +114,21 @@
     margin-left: -11px;
     width: calc(100% + 22px);
     margin-top: 18px;
+
+    @media (max-width: $xs) {
+      margin-left: 0;
+      width: 100%;
+    }
   }
 
   &__block {
     width: calc(33.33% - 22px);
     margin: 11px;
+
+    @media (max-width: $xs) {
+      margin: 15px 0 0;
+      width: 100%;
+    }
   }
 
   &__button {

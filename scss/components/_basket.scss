@@ -20,6 +20,10 @@
     transition: 0.3s;
     margin-right: 65px;
 
+    @media (max-width: $xs) {
+      margin-right: 30px;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -47,6 +51,11 @@
     position: relative;
     min-height: 200px;
 
+    @media (max-width: $xs) {
+      flex-wrap: wrap;
+      padding: 20px 0 70px;
+    }
+
     &--head {
       min-height: 0;
       padding: 13px 0;
@@ -55,8 +64,25 @@
         font-size: 20px!important;
         line-height: 23px!important;
 
+        @media (max-width: $sm) {
+          font-size: 14px!important;
+        }
+
+        @media (max-width: $xs) {
+          display: none;
+
+          &:first-child {
+            display: block;
+            width: 100%;
+          }
+        }
+
         &--count {
           padding-left: 20px;
+
+          @media (max-width: $sm) {
+            padding-left: 10px;
+          }
         }
       }
     }
@@ -65,6 +91,15 @@
       .basket-table__cell {
         font-size: 24px!important;
         line-height: 28px!important;
+
+        @media (max-width: $md) {
+          font-size: 20px!important;
+          line-height: 23px!important;
+        }
+
+        @media (max-width: $sm) {
+          font-size: 14px!important;
+        }
 
         &--image {
           font-weight: 500;
@@ -98,6 +133,11 @@
       width: 21%;
       text-align: center;
 
+      @media (max-width: $xs) {
+        width: 50%;
+        padding-right: 15px;
+      }
+
       img {
         max-width: 100%;
         max-height: 145px;
@@ -106,10 +146,35 @@
 
     &--description {
       width: 150px;
+
+      @media (max-width: $md) {
+        width: 180px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+      }
+
+      @media (max-width: $xs) {
+        width: 50%;
+      }
     }
 
     &--count {
       width: 174px;
+
+      @media (max-width: $sm) {
+        width: 115px;
+      }
+
+      @media (max-width: $xs) {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        padding-right: 15px;
+      }
     }
 
     &--text_center {
@@ -118,6 +183,19 @@
 
     &--buy {
       width: 247px;
+
+      @media (max-width: $md) {
+        width: 210px;
+      }
+
+      @media (max-width: $sm) {
+        width: 150px;
+      }
+
+      @media (max-width: $xs) {
+        width: 50%;
+        margin-top: 20px;
+      }
     }
   }
 
@@ -126,6 +204,10 @@
 
     & + .basket-table__model {
       margin-top: 9px;
+
+      @media (max-width: $sm) {
+        margin-top: 5px;
+      }
     }
   }
 
@@ -148,12 +230,35 @@
     right: 0;
     bottom: 32px;
     width: 247px;
+
+    @media (max-width: $md) {
+      width: 210px;
+    }
+
+    @media (max-width: $sm) {
+      width: 150px;
+      font-size: 14px;
+      bottom: 15px;
+    }
+
+    @media (max-width: $xs) {
+      width: 50%;
+    }
   }
 
   &__book-all {
     margin-top: 17px;
     background: $blue;
     border: 1px solid $blue;
+
+    @media (max-width: $sm) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $xs) {
+      width: 100%;
+      padding: 0;
+    }
 
     &:hover {
       background: white;
@@ -179,12 +284,20 @@
   font-size: 26px;
   line-height: 30px;
 
+  @media (max-width: $sm) {
+    font-size: 18px;
+  }
+
   span {
     width: 52px;
     flex-shrink: 0;
     text-align: center;
     cursor: pointer;
     display: block;
+
+    @media (max-width: $sm) {
+      width: 34px;
+    }
   }
 
   &__input {
@@ -194,5 +307,11 @@
     font-size: 26px;
     line-height: 30px;
     font-family: $textFont;
+
+    @media (max-width: $sm) {
+      font-size: 16px;
+      line-height: 24px;
+      width: 40px;
+    }
   }
 }
