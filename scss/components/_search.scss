@@ -16,7 +16,15 @@
     line-height: 21px;
     padding: 9px 0 9px 24px;
 
-    @include placeholderColor(rgba(0,0,0,0.3))
+    @include placeholderColor(rgba(0,0,0,0.3));
+
+    @media (max-width: $lg) {
+      padding-left: 15px;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 12px;
+    }
   }
 
   &__button {
@@ -27,5 +35,15 @@
     height: 35px;
     background: url('../img/search-icon.svg') center no-repeat;
     cursor: pointer;
+
+    @media (max-width: $lg) {
+      width: 30px;
+    }
+
+    @media (max-width: $sm) {
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+    }
   }
 }

@@ -54,12 +54,34 @@ footer {
     height: 75px;
     position: relative;
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+
+    @media (max-width: $xs) {
+        height: 120px;
+    }
 }
 
 .container {
     width: 1276px;
     margin: 0 auto;
     max-width: 100%;
+
+    @media (max-width: $lg) {
+        max-width: 1140px;
+    }
+
+    @media (max-width: $md) {
+        max-width: 932px;
+    }
+
+    @media (max-width: $sm) {
+        max-width: 708px;
+    }
+
+    @media (max-width: $xs) {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     &--form {
         width: 704px;
@@ -86,6 +108,8 @@ footer {
     line-height: 20px;
     position: relative;
     cursor: pointer;
+    flex-shrink: 0;
+    white-space: nowrap;
 
     &--blue {
         background: $blue;
@@ -105,6 +129,13 @@ footer {
         font-size: 20px;
         line-height: 25px;
         padding: 0 60px;
+
+        @media (max-width: $sm) {
+            font-size: 16px;
+            line-height: 20px;
+            height: 30px;
+            padding: 0 30px;
+        }
 
         &:hover {
             background: $blue;

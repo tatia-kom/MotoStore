@@ -4,13 +4,25 @@
   background: #F2F2F2;
   padding: 39px 0;
 
+  @media (max-width: $xs) {
+    padding: 20px 0 10px;
+  }
+
   &__flex {
     display: flex;
+
+    @media (max-width: $xs) {
+      flex-direction: column;
+    }
   }
 
   &__left {
     width: 34%;
     flex-shrink: 0;
+
+    @media (max-width: $xs) {
+      width: 100%;
+    }
   }
 
   &__subscribe-text {
@@ -34,6 +46,15 @@
 
   &__menu {
     margin-left: 55px;
+
+    @media (max-width: $sm) {
+      margin-left: 30px;
+    }
+
+    @media (max-width: $xs) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }
 }
 
@@ -81,8 +102,19 @@
 .column-menu {
   display: flex;
 
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+
   &__col {
     margin-right: 55px;
+
+    @media (max-width: $sm) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-right: 0;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -97,6 +129,14 @@
     position: relative;
     display: block;
     margin-bottom: 10px;
+
+    @media (max-width: $sm) {
+      width: 45%;
+    }
+
+    @media (max-width: $xs) {
+      width: 100%;
+    }
 
     &:hover {
       color: $blue;
@@ -126,6 +166,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $xs) {
+      flex-wrap: wrap;
+    }
   }
 
   &__copyright {
@@ -133,10 +177,25 @@
     font-size: 8px;
     line-height: 10px;
     font-family: $serviceFontRegular;
+    margin-right: 30px;
+
+    @media (max-width: $xs) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
   }
 
   &__logo {
     margin: 0 30px 0 auto;
+
+    @media (max-width: $xs) {
+      margin: 0;
+      max-width: 50%;
+    }
+
+    img {
+      max-width: 100%;
+    }
   }
 
   &__slogan {
@@ -148,6 +207,7 @@
     padding-bottom: 6px;
     padding-right: 9px;
     position: relative;
+    flex-shrink: 0;
 
     &:before {
       content: '';
