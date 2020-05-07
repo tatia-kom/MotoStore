@@ -298,6 +298,12 @@
     @media (max-width: $sm) {
       width: 34px;
     }
+
+    @media (max-width: $xs) {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
   }
 
   &__input {
