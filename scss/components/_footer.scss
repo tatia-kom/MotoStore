@@ -46,13 +46,12 @@
 
   &__menu {
     margin-left: 55px;
-
-    @media (max-width: $sm) {
-      margin-left: 30px;
-    }
+    width: 100%;
+    justify-content: center;
 
     @media (max-width: $xs) {
       margin-left: 0;
+      justify-content: flex-start;
       margin-top: 20px;
     }
   }
@@ -102,19 +101,8 @@
 .column-menu {
   display: flex;
 
-  @media (max-width: $sm) {
-    flex-direction: column;
-  }
-
   &__col {
     margin-right: 55px;
-
-    @media (max-width: $sm) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-right: 0;
-    }
 
     &:last-child {
       margin-right: 0;
@@ -129,14 +117,6 @@
     position: relative;
     display: block;
     margin-bottom: 10px;
-
-    @media (max-width: $sm) {
-      width: 45%;
-    }
-
-    @media (max-width: $xs) {
-      width: 100%;
-    }
 
     &:hover {
       color: $blue;
