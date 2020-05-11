@@ -10,6 +10,61 @@
 </head>
 <body>
 
+<!-- LOADER -->
+
+<!-- Добавить класс "preloader--hidden" для скрытия прелоадера -->
+<div class="preloader preloader--hidden">
+    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="l-circle">
+            <circle r="10" cx="10" cy="10" />
+        </symbol>
+        <g id="loader" class="l-circles">
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+            <g class="g-circle">
+                <use xlink:href="#l-circle" class="load-circle" />
+            </g>
+        </g>
+    </svg>
+</div>
+<!-- / LOADER -->
 
 <section class="main-head">
     <!-- HEADER -->
@@ -355,6 +410,52 @@
     </div>
 
     <!-- / FOOTER -->
+
+
+    <!-- Модалка Заказ звонка -->
+
+    <!-- Добавить класс "modal--opened" для открытия модального окна -->
+    <div class="modal">
+        <div class="modal__content">
+            <span class="modal__close"></span>
+
+            <p class="test__name">Пожалуйста, введите ваши персональные данные:</p>
+
+            <form class="test-form">
+                <!-- Можно добавить класс "form-block--error". Появится текст ошибки и рамка у поля станет красной -->
+                <div class="form-block">
+                    <label class="form-block__label">ФИО</label>
+                    <input type="text" class="form-block__input">
+                    <p class="form-block__hint">Тут текст ошибки</p>
+                </div>
+
+                <!-- Можно добавить класс "form-block--error". Появится текст ошибки и рамка у поля станет красной -->
+                <div class="form-block">
+                    <label class="form-block__label">Контактный телефон</label>
+                    <input type="text" class="form-block__input">
+                    <p class="form-block__hint">Тут текст ошибки</p>
+                </div>
+
+                <button class="button button--blue form-block__button">Заказать обратный звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- / Модалка Заказ звонка -->
+
+    <!-- Модалка Спасибо -->
+
+    <!-- Добавить класс "modal--opened" для открытия модального окна -->
+    <div class="modal modal--opened">
+        <div class="modal__content">
+            <span class="modal__close"></span>
+
+            <p class="test__name">Ваша заявка принята.</p>
+            <p>Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+
+    <!-- / Модалка Заказ звонка -->
 
 
 
