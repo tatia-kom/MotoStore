@@ -80,7 +80,7 @@
       transform: translateY(0);
 
       @media (max-width: $xs) {
-        transform: translateY(37px);
+        //transform: translateY(37px);
       }
 
       .catalog__items--shown {
@@ -192,6 +192,7 @@
 
     @media (max-width: $xs) {
       order: 4;
+      margin-top: 20px;
     }
   }
 
