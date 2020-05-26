@@ -166,7 +166,7 @@
 
     &:hover {
       a {
-        font-family: $serviceFontRegular;
+        //font-family: $serviceFontRegular;
         font-weight: bold;
         font-size: 22px;
         line-height: 27px;
@@ -227,7 +227,7 @@
   }
 
   &__text-title {
-    font-family: $itemFont;
+    font-family: $boldFont;
     font-weight: bold;
     font-size: 34px;
     line-height: 41px;
@@ -251,7 +251,7 @@
   }
 
   &__text {
-    font-family: $itemFont;
+    font-family: $regFont;
     font-size: 14px;
     line-height: 17px;
   }
@@ -270,7 +270,7 @@
     }
 
     li {
-      font-family: $itemFont;
+      font-family: $regFont;
       font-size: 14px;
       line-height: 17px;
     }

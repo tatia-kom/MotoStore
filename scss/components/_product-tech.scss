@@ -2,7 +2,7 @@
 
 .product-tech {
   &__title {
-    font-family: $itemFont;
+    font-family: $boldFont;
     font-weight: bold;
     font-size: 66px;
     line-height: 60px;
@@ -27,7 +27,7 @@
   }
 
   &__subtitle {
-    font-family: $itemFont;
+    font-family: $boldFont;
     font-weight: bold;
     font-size: 42px;
     line-height: 51px;
@@ -44,7 +44,7 @@
 
   &__text {
     margin-top: 27px;
-    font-family: $itemFont;
+    font-family: $regFont;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -63,7 +63,7 @@
   &__name {
     text-align: center;
     text-transform: uppercase;
-    font-family: $itemFont;
+    font-family: $boldFont;
     font-weight: bold;
     font-size: 34px;
     line-height: 41px;
@@ -129,7 +129,7 @@
 .product-tech-block {
   margin: 52px 0 0;
   display: flex;
-  font-family: $serviceFontRegular;
+  font-family: $regFont;
 
   @media (max-width: $xs) {
     margin-top: 30px;
@@ -244,7 +244,6 @@
 
   &__info {
     font-size: 14px;
-    font-weight: bold;
     line-height: 17px;
     padding: 20px 27px;
     position: relative;
@@ -278,7 +277,7 @@
   &__button {
     width: 275px;
     margin-left: 19px;
-    font-family: $serviceFontRegular;
+    font-family: $regFont;
     padding: 0;
 
     @media (max-width: $sm) {

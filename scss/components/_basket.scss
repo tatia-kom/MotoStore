@@ -61,11 +61,11 @@
       padding: 13px 0;
 
       .basket-table__cell {
-        font-size: 20px!important;
+        font-size: 18px!important;
         line-height: 23px!important;
 
         @media (max-width: $sm) {
-          font-size: 14px!important;
+          font-size: 12px!important;
         }
 
         @media (max-width: $xs) {
@@ -89,16 +89,16 @@
 
     &--head_big {
       .basket-table__cell {
-        font-size: 24px!important;
+        font-size: 22px!important;
         line-height: 28px!important;
 
         @media (max-width: $md) {
-          font-size: 20px!important;
+          font-size: 18px!important;
           line-height: 23px!important;
         }
 
         @media (max-width: $sm) {
-          font-size: 14px!important;
+          font-size: 12px!important;
         }
 
         &--image {
@@ -126,7 +126,7 @@
 
   &__cell {
     flex-shrink: 0;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 26px;
 
     &--image {
@@ -222,6 +222,7 @@
   }
 
   &__price {
+    font-family: $boldFont;
     font-weight: bold;
   }
 
@@ -304,12 +305,12 @@
     width: 70px;
     border: 2px solid $dark;
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 30px;
-    font-family: $textFont;
+    font-family: $regFont;
 
     @media (max-width: $sm) {
-      font-size: 16px;
+      font-size: 12px;
       line-height: 24px;
       width: 40px;
     }

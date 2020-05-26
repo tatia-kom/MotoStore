@@ -1,7 +1,7 @@
 @import "layout/var";
 
 .product-tabs {
-  font-family: $itemFont;
+  font-family: $regFont;
 
   &__flex {
     display: flex;
@@ -46,7 +46,7 @@
   transform: translateX(100%);
   transition: 0.3s;
   padding: 47px;
-  font-family: $itemFont;
+  font-family: $regFont;
   display: flex;
   flex-direction: column;
 
@@ -71,6 +71,7 @@
 
   &__name {
     font-weight: 800;
+    font-family: $boldFont;
     font-size: 30px;
     line-height: 37px;
     width: 105%;
@@ -105,6 +106,7 @@
 
   &__price {
     font-weight: bold;
+    font-family: $boldFont;
     font-size: 26px;
     line-height: 32px;
     margin-top: 8px;
@@ -388,7 +390,7 @@
       background: $blue;
       color: white;
       padding: 34px 74px 34px 34px;
-      font-family: $textFont;
+      font-family: $regFont;
       font-weight: 500;
       font-size: 22px;
       line-height: 118.69%;

@@ -2,7 +2,7 @@
 @import "layout/var";
 
 body {
-    font-family: $textFont, sans-serif;
+    font-family: $regFont, sans-serif;
     color: $dark;
     margin: 0;
     padding: 0;
@@ -174,7 +174,7 @@ $angle: 360/$max; /* угол поворота каждого кружка от�
 
 .button {
     height: 38px;
-    font-family: $serviceFontRegular;
+    font-family: $regFont;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
