@@ -9,6 +9,7 @@
   position: relative;
   background: white;
   transition: 0.3s;
+  height: 75px;
 
   @media (max-width: 1361px) {
     padding: 12px 30px 11px;
@@ -264,7 +265,7 @@
     }
 
     img {
-      width: 179px;
+      width: 140px;
 
       @media (max-width: $sm) {
         width: 130px;
@@ -273,10 +274,10 @@
 
     span {
       font-weight: 900;
-      font-size: 9px;
+      font-size: 8px;
       color: black;
       line-height: 13px;
-      margin-left: 51px;
+      margin-left: 39px;
 
       @media (max-width: $sm) {
         margin-left: 0;

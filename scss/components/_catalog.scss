@@ -139,6 +139,11 @@
     opacity: 0;
     transition: 0.5s;
     overflow: auto;
+    padding-right: 7%;
+
+    @media (max-width: $lg) {
+      padding-right: 0;
+    }
 
     &--shown {
       //opacity: 1;
@@ -146,7 +151,7 @@
   }
 
   &__item {
-    width: 23%;
+    width: 18%;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -155,6 +160,10 @@
     min-height: 215px;
     cursor: pointer;
     margin-right: 2%;
+
+    @media (max-width: $md) {
+      width: 23%;
+    }
 
     @media (max-width: $sm) {
       min-height: 200px;
@@ -182,13 +191,13 @@
       display: block;
       margin-top: 17px;
       color: $dark;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 23px;
       padding-bottom: 11px;
       border-bottom: 3px solid transparent;
 
       @media (max-width: $sm) {
-        font-size: 18px;
+        font-size: 16px;
         border-bottom-width: 2px;
         padding-bottom: 8px;
       }
@@ -197,7 +206,7 @@
 
   &__item-img {
     width: 100%;
-    height: 155px;
+    height: 135px;
     display: flex;
 
     @media (max-width: $sm) {
