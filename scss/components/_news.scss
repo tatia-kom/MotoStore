@@ -130,6 +130,10 @@
 
     &:before {
       padding-top: 61.14%;
+
+      @media (max-width: $xs) {
+      	padding-top: 124%;
+      }
     }
 
     .news-item__content {
@@ -254,6 +258,7 @@
   }
 
   &__title {
+  	font-family: sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 105.5%;
@@ -310,5 +315,9 @@
     font-size: 12px;
     line-height: 14px;
     color: $dark;
+
+    @media (max-width: $xs) {
+    	display: none;
+    }
   }
 }
